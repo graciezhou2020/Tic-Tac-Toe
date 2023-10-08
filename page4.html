@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for tictactoe project: Page 4(Play Page)
+    Class: EECS 1012, York University, Lassonde School of Engineering
+    Author: Oluwafunmbi Akande, Urshita Bharal, Gracie Zhou -->
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> Play </title>
+  <link rel="stylesheet" type="text/css" href="page4.css" title="style" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="page4.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- current player iwll be displayed here via js-->
+    <p id="playerTurn"> _____'s turn </p>
+  </header>
+  
+  <!-- Look, here, I tried to use the image but the coordinates were too hard to pinpoint, I ended up spending an hour 
+    and I still got the coordinates wrong, so I searched online and used cells instead
+    <div>
+      <img src="playimage.jpg" width="35%" usemap="#playmap">
+    </div>
+    <map name="playmap">
+      <area shape="rect" coords="0, 0, 200, 200" id="box1">
+    </map>
+  -->
+
+  <div class="gameBoard">
+    <div data-cell-index="0" class="cell" id = "box_0" onclick="play(0)"></div>
+    <div data-cell-index="1" class="cell" id = "box_1" onclick="play(1)"></div>
+    <div data-cell-index="2" class="cell" id = "box_2" onclick="play(2)"></div>
+    <div data-cell-index="3" class="cell" id = "box_3" onclick="play(3)"></div>
+    <div data-cell-index="4" class="cell" id = "box_4" onclick="play(4)"></div>
+    <div data-cell-index="5" class="cell" id = "box_5" onclick="play(5)"></div>
+    <div data-cell-index="6" class="cell" id = "box_6" onclick="play(6)"></div>
+    <div data-cell-index="7" class="cell" id = "box_7" onclick="play(7)"></div>
+    <div data-cell-index="8" class="cell" id = "box_8" onclick="play(8)"></div>
+
+
+</div>
+
+  <!-- the naviagation buttons-->
+  <button id="backbtn" onclick="back()"> BACK </button>
+  <button id="htpbtn" onclick="howtoplay()"> HOW TO PLAY </button>
+  <button id="exitbtn" onclick="exit()"> EXIT </button>
+  <button id="playagainbtn" onclick = "playAgain()"> PLAY AGAIN </button>
+
+  <p id="winnerPlayer"></p>
+  <p id="gameOver"></p>
+  
+</body>
+
+</html>

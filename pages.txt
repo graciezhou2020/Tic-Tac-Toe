@@ -1,0 +1,20 @@
+Page 1:
+    Welcome Page 
+
+Page 2:
+    Username Page 
+
+Page 3:
+    How To Play Page 
+
+Page 4:
+    Play Page 
+
+Page 5:
+    Winner Page 
+
+Page 6:
+    Exit Page 
+
+Page 7:
+    Footer Page

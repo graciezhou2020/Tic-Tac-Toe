@@ -1,0 +1,86 @@
+/*  CSS for tictactoe project: Page 3(How To Play Page)
+Class: EECS 1012, York University, Lassonde School of Engineering
+Author: Oluwafunmbi Akande, Urshita Bharal, Gracie Zhou  */
+
+header {
+    font-size: 30px;
+    text-align: center;
+} 
+div {
+    text-align: center;
+}
+
+/* general instructions that all the buttons share like their color & font */
+button {
+    background-color: transparent;
+    font-size: 18px;
+    color: slategrey;
+    padding: 8px;
+    margin: 15px;
+    margin-top: 20px;
+    border: 2px solid dodgerblue ;
+    border-radius: 8px;
+} button:hover {
+    background-color: dodgerblue;
+} 
+
+/* these set of css put the buttons in their correct posititons and adjusts their sizes */
+#backbtn {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 90px;
+} #htpbtn {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 150px;
+} #exitbtn {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    width: 90px;
+} #playagainbtn {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    width: 180px;
+}
+
+h4 {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 90px;
+}
+
+#winnerPlayer{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+#gameOver{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gameBoard {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-left: 380px;
+    margin-right: 380px;
+    width: 200px;
+    background-color: transparent;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    border: 2px solid grey;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}

@@ -1,0 +1,51 @@
+/*  CSS for tictactoe project: Page 3(How To Play Page)
+Class: EECS 1012, York University, Lassonde School of Engineering
+Author: Oluwafunmbi Akande, Urshita Bharal, Gracie Zhou  */
+button {
+    background-color: transparent;
+    font-size: 18px;
+    color: slategrey;
+    padding: 8px;
+    margin: 15px;
+    margin-top: 20px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border: 2px solid dodgerblue ;
+    border-radius: 8px;
+    width: 90px;
+} button:hover {
+    background-color: dodgerblue;
+} 
+
+header {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px;
+    text-align: center;
+}
+
+
+
+.part1 {
+    width: 20%;
+}
+
+section {
+    float: right;
+    width: 70%;
+}
+.column {
+    text-align: center;
+    float: right;
+    width: 20%;
+    padding: 5px;
+} .part2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.caption {
+    text-align: center;
+}
